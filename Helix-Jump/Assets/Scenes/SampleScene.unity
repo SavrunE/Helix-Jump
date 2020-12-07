@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ed057d37ec655946b5f7f62398ebae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCount: 5
+  levelCount: 10
+  aditionalScale: 2
   beam: {fileID: 2598799826618677114, guid: f153d5e634e06ab4db78b5f62bcdeb22, type: 3}
   spawnPlatform: {fileID: 3424266081014610240, guid: 686c66c74dc4ab948be7782b80a5cb31, type: 3}
   finish: {fileID: 8546495935638274977, guid: 6878330c317413545978c43057946a84, type: 3}

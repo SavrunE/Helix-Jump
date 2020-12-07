@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class SpawnPlatform : MonoBehaviour
+public class SpawnPlatform : Platform
 {
 }
