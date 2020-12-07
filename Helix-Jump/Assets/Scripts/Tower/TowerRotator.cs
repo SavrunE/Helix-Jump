@@ -5,11 +5,11 @@ public class TowerRotator : MonoBehaviour
 {
     [SerializeField] private float rotateSpeed;
 
-    private Rigidbody rigibbody;
+    private Rigidbody rigidbody;
 
     private void Start()
     {
-        rigibbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody>();
     }
     private void Update()
     {
@@ -19,7 +19,7 @@ public class TowerRotator : MonoBehaviour
             if (touch.phase == TouchPhase.Moved)
             {
                 float torque = touch.deltaPosition.x * Time.deltaTime * rotateSpeed;
-                rigibbody.AddTorque(Vector3.up * torque);
+                rigidbody.AddTorque(Vector3.up * torque);
             }
         }
     }
