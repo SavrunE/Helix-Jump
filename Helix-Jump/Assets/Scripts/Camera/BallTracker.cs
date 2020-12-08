@@ -31,8 +31,10 @@ public class BallTracker : MonoBehaviour
 
     private void TrackBall()
     {
+        Vector3 beamPosition = beam.transform.position;
+        beamPosition.y = ball.transform.position.y;
         cameraPosition = ball.transform.position;
-        Vector3 direction = (beam.transform.position - ball.transform.position).normalized + directionOffset;
+        Vector3 direction = (beamPosition - ball.transform.position).normalized + directionOffset;
         cameraPosition -= direction * lenght;
         transform.position = cameraPosition;
         transform.LookAt(ball.transform);

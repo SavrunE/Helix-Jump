@@ -14,7 +14,7 @@ public class TowerBuilder : MonoBehaviour
     private float startBeamHight;
     private float beamHight => levelCount / 2f + startBeamHight / 2f + aditionalScale/2f;
 
-    private void Start()
+    private void Awake()
     {
         startBeamHight = beam.transform.localScale.y;
         Build();
